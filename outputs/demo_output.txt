@@ -1,0 +1,14 @@
+Adjacency matrix (order A..E):
+ [[0 1 1 0 0]
+ [1 0 1 1 0]
+ [1 1 0 1 1]
+ [0 1 1 0 1]
+ [0 0 1 1 0]]
+Degrees: {'A': 2, 'B': 3, 'C': 4, 'D': 3, 'E': 2}
+Adjacency list: {'A': ['B', 'C'], 'B': ['A', 'C', 'D'], 'C': ['A', 'B', 'D', 'E'], 'D': ['B', 'C', 'E'], 'E': ['C', 'D']}
+BFS order: ['A', 'B', 'C', 'D', 'E', 'F']
+DFS order: ['A', 'B', 'D', 'E', 'C', 'F']
+Dijkstra from A: {'A': 0, 'B': 3, 'C': 2, 'D': 8, 'E': 10}
+NetworkX check: ['A', 'C', 'B', 'D', 'E'] 10
+MST edges: [('A', 'C', 2), ('B', 'C', 1), ('B', 'D', 5), ('D', 'E', 2)] total = 10.0
+Maximum flow value: 8
