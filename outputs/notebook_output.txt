@@ -1,0 +1,55 @@
+order n = 5  size m = 5
+degrees : {'A': 2, 'B': 2, 'C': 3, 'D': 2, 'E': 1}
+sum of degrees = 10 = 2m = 10
+adjacency matrix:
+ [[0 1 1 0 0]
+ [1 0 1 0 0]
+ [1 1 0 1 0]
+ [0 0 1 0 1]
+ [0 0 0 1 0]]
+adjacency list  : {'A': ['B', 'C'], 'B': ['A', 'C'], 'C': ['A', 'B', 'D'], 'D': ['C', 'E'], 'E': ['D']}
+A^2 =
+ [[2 1 1]
+ [1 2 1]
+ [1 1 2]] 
+trace(A^3)/6 = 1 (triangles)
+(4, 3, 3, 2, 2) graphical True
+(3, 3, 3, 1) not graphical False
+odd vertices: ['A', 'C'] | has Euler circuit: False | has Euler path: True
+Euler path  : [('A', 'B'), ('B', 'C'), ('C', 'A'), ('A', 'D'), ('D', 'C')]
+Konigsberg degrees: {'A': 3, 'D': 5, 'B': 3, 'C': 3} | Euler path exists: False
+K2,3 Hamiltonian? False | K4 Hamiltonian? True
+A-B-D-C-A 80
+A-C-D-B-A 80
+A-B-C-D-A 95
+A-C-B-D-A 95
+A-D-B-C-A 95
+A-D-C-B-A 95
+optimal = 80 | distinct tours = (4-1)!/2 = 3
+Dijkstra from A : {'A': 0, 'B': 3, 'C': 2, 'D': 8, 'E': 10}
+NetworkX path   : ['A', 'C', 'B', 'D', 'E'] 10
+Floyd–Warshall D(4):
+ [[0 3 5 6]
+ [5 0 2 3]
+ [3 6 0 1]
+ [2 5 7 0]]
+MST: [('A', 'C', 2), ('B', 'C', 1), ('B', 'D', 5), ('D', 'E', 2)] total = 10.0
+spanning trees by matrix-tree theorem: 3
+K4 spanning trees: 16 = 4^(4-2) = 16
+max flow = 8 | min cut = 8 ({'a', 'b', 's'}, {'t'})
+Fig. 4.9 network, max flow = 13
+K5 planar: False
+K3,3 planar: False
+K4 planar: True
+greedy colouring: {'A': 0, 'C': 1, 'B': 2, 'D': 2} | colours used = 3
+chromatic polynomial: x*(x - 2)**2*(x - 1)
+P(3) = 6
+BFS: ['A', 'B', 'C', 'D', 'E', 'F']
+DFS: ['A', 'B', 'D', 'E', 'C', 'F']
+topological order: ['A', 'B', 'C', 'D', 'E', 'F']
+max matching: {'S2': 'P2', 'S3': 'P3', 'S1': 'P1', 'P2': 'S2', 'P3': 'S3', 'P1': 'S1'}
+odd vertices ['A', 'C'] | total length 20.0 | repeat shortest path 6 | postman route = 26.0
+assignment [('W1', 'Task2'), ('W2', 'Task1'), ('W3', 'Task3')] cost 6
+timetable slots: {0: ['M', 'T'], 1: ['C', 'S'], 2: ['E', 'P']} | slots = 3
+courier optimum A-B-C-D-E-A 64 km | distinct tours 12
+nearest neighbour A-E-D-B-C-A 74 km
